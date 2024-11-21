@@ -1,0 +1,30 @@
+/* Global */
+:root{
+    /* colors */
+    --color-header: #C52613;
+    --color-txt: #FFFFFF;
+    --color-designer: #000000;
+
+    /* font-page */
+    --font-family: "Poppins", sans-serif;
+    --font-family-txt: "Roboto", sans-serif;
+    --title-header-bold: 700 18px/145 var(--font-family);
+    --txt-title: 400 16px/150 var(--font-family);
+    --text-thepage: 400 14px/140 var(--font-family-txt);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+    font-size: var(--font-family-txt);
+}
+
+/* header */
+.container{
+    max-width: 1280px;
+    margin-inline: 32px;
+    padding-inline: 40px;
+}
