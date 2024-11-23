@@ -1,0 +1,84 @@
+#intro{
+    background-image: url(assets/imagens/Background_Intro.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* perfil */
+.info{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 1040px;
+    width: auto;
+    padding-inline: 175px;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 56px;
+}
+.avatar>img{
+    border-radius: 5rem;
+    background-size: cover;
+    padding: 5px;
+    border: 1px solid var(--red);
+}
+.title{
+    padding-bottom: 80px;
+}
+.title>h3{
+    display: flex;
+    justify-content: center;
+    color: var(--gray-500);
+    font: var(--subtitle-inco);
+}
+.title>h1{
+    display: flex;
+    justify-content: center;
+    color: var(--gray-600);
+    font: var(--title-lg);
+}
+.title>p{
+    display: flex;
+    justify-content: center;
+    color: var(--gray-400);
+    font: var(--text-sm);
+    max-width: 680px;
+}
+/* tags */
+.tags ul li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font: var(--text-md);
+    background-color: var(--gray-300);
+    color: var(--gray-500);
+    border-radius: 2rem;
+    padding-inline: 14px;
+}
+.tags i{
+    padding: 10px;
+}
+.html i{
+    color: var(--red);
+}
+.css i{
+    color: var(--blue);
+}
+.javascrt i{
+    color: var(--yellow);
+}
+.react i{
+    color: var(--blue);
+}
+.node i{
+    color: var(--green);
+}

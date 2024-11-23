@@ -26,3 +26,13 @@
     --gray-500: #C0C4CE;
     --gray-600: #E2E4E9;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
