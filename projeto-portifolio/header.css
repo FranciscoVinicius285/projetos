@@ -65,7 +65,7 @@
     padding-inline: 14px;
 }
 .tags i{
-    padding: 10px;
+    padding: 8px;
 }
 .html i{
     color: var(--red);
@@ -81,4 +81,10 @@
 }
 .node i{
     color: var(--green);
+}
+.set-down{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
