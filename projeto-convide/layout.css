@@ -1,0 +1,41 @@
+#app{
+    display: grid;
+    grid-template-columns: 32.79% 67.21%;
+    height: 100vh;
+    overflow: hidden;
+}
+aside{
+    background-image: url(assets/Background.png);
+    max-width: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: .75rem;
+    margin-block: 20px;
+    margin-left: auto;
+    & .aside-container{
+        display: inline-block;
+        justify-content: center;
+        padding: 4rem;
+    }
+    & img{
+        width: 25%;
+    }
+    & h1{
+        color: var(--pink);
+        font-family: "Leckerli One", serif;
+        font-size: 40px;
+        font-weight: auto;
+    }
+    & p{
+        font-family: "Open Sans", serif;
+        font-size: 16px;
+        font-weight: auto;
+        color: var(--text-heading);
+    }
+}
+main{
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+    margin: 20px;
+    padding: 8rem;
+}

@@ -1,0 +1,31 @@
+:root{
+    --font-sans: "Open Sans", serif;
+    --font-one: "Leckerli One", serif;
+    --font-baloo: "Baloo 2", serif;
+
+    --logo: 400 2.5rem/auto var(--font-one);
+    --head-md: 700 1.75rem/auto var(--font-baloo);
+    --head-sm: 700 1.125rem/auto var(--font-baloo);
+    --body-md: 400 1rem/auto var(--font-sans);
+    --body-sm: 400 0.875rem/auto var(--font-sans);
+    --body-xs: 400 0.75rem/auto var(--font-sans);
+
+    --pink: #ff598b;
+    --bg: #131516;
+    --shape-body: #212427;
+
+
+    /* text */
+
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: var(--bg);
+}
