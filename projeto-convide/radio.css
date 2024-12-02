@@ -1,0 +1,35 @@
+.radio-wrapper{
+    border: 1px solid var(--input-placeholder);
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.1rem, 1fr));
+    max-width: 350px;
+    gap: .5rem;
+}
+.radio-inner{
+    background-color: var(--input-base);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: .25rem;
+    border-radius: 0.5rem;
+    font-family: "Open Sans", serif;
+    position: relative;
+
+    & label{
+        padding-block: 1rem;
+    }
+    & label > img{
+        padding-right: 0.5rem;
+    }
+
+    & input{
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+    &:has(:checked){
+         background-color: var(--input-stroke);
+         font-weight: bold;
+    }
+}

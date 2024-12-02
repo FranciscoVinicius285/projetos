@@ -1,4 +1,6 @@
 :root{
+    /* font-family: "Baloo 2", serif
+    font-family: "Open Sans", serif; */
     --font-sans: "Open Sans", serif;
     --font-one: "Leckerli One", serif;
     --font-baloo: "Baloo 2", serif;
@@ -13,6 +15,11 @@
     --pink: #ff598b;
     --bg: #131516;
     --shape-body: #212427;
+    --input-placeholder:#869198;
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --brand-light: #59B2FF;
+    --danger: #FF5959;
 
 
     /* text */
@@ -28,4 +35,10 @@
 body{
     overflow: hidden;
     background-color: var(--bg);
+}
+.input-wrapper{
+    padding-bottom: 1rem;
+}
+fieldset{
+    border: none;
 }

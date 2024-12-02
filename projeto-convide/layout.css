@@ -6,11 +6,11 @@
 }
 aside{
     background-image: url(assets/Background.png);
-    max-width: 500px;
+    width: 500px;
     background-position: center;
     background-size: cover;
     border-radius: .75rem;
-    margin-block: 20px;
+    margin: 20px;
     margin-left: auto;
     & .aside-container{
         display: inline-block;
@@ -36,6 +36,24 @@ aside{
 main{
     background-color: var(--shape-body);
     border-radius: .75rem;
-    margin: 20px;
     padding: 8rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    & .body-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-inline:  8.1rem;
+        max-width: 800px;
+    }
+
+    & .main-container{
+        font-family: "Baloo 2", serif;
+        color: var(--text-heading);
+        display: flex;
+        padding-bottom: 40px;
+    }
+
 }

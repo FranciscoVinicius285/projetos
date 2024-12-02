@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Site de convite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Leckerli+One&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +20,68 @@
             </div>
         </aside>
         <main>
-            <div class="main-container">
-                <h1>Crie seu convite</h1>
+            <div class="body-main">
+                <div class="main-container">
+                    <h1>Crie seu convite</h1>
+                </div>
+    
+                <form>
+                    <legend>
+                        <i class="fa-solid fa-calendar"></i>
+                        <h1>Sobre o evento</h1>
+                    </legend>
+                       <fieldset>
+                        <div class="input-wrapper">
+                            <label for="title">Titulo</label>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="title">Titulo</label>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="grid-input">
+                            <div class="input-wrapper">
+                                <label for="date">Titulo</label>
+                                <input type="datetime-local" name="date" id="date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="date">Titulo</label>
+                                <input type="datetime-local" name="date" id="date">
+                            </div>
+                            <div class="input-wrapper">
+                                    <label>Tipo</label>
+
+                                    <div class="radio-wrapper">
+                                        <div class="radio-inner">
+                                            <input type="radio" name="type" id="Presencial" value="Presencial">
+                                            <label for="Presencial"><img src="assets/building-no-checckd.svg" alt="">Presencial</label>
+                                        </div>
+
+                                        <div class="radio-inner">
+                                            <input type="radio" name="type" id="Online" value="Online">
+                                            <label for="Online"><img src="assets/video.svg" alt="">Online</label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="location">local</label>
+                                <input type="text" name="location" id="location" placeholder="Link ou endereco">
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descricao</label>
+                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                       </fieldset>
+                        <!-- <div class="danger">
+                            <img src="assets/circle-alert.svg" alt="">
+                            <span>Error message</span>
+                        </div> -->
+
+        
+                </form>
             </div>
         </main>
     </div>
