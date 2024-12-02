@@ -1,0 +1,30 @@
+.grid-input{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 1rem;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(7.8rem, 1fr));
+    gap: 8px; 
+}
+.cards{
+    display: grid;
+    justify-items: center;
+    background-color: var(--input-stroke);
+    border-radius: 0.5rem;
+
+    & img{
+        width: 90%;
+        padding-top: 5px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    & h1{
+        color: var(--text-heading);
+        font-family: "Baloo 2", serif;
+        font-size: 14px;
+        padding-block: 5px;
+    }
+}
