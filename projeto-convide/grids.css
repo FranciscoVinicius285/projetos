@@ -13,6 +13,7 @@
     justify-items: center;
     background-color: var(--input-stroke);
     border-radius: 0.5rem;
+    position: relative;
 
     & img{
         width: 90%;
@@ -26,5 +27,13 @@
         font-family: "Baloo 2", serif;
         font-size: 14px;
         padding-block: 5px;
+    }
+
+    & input{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        background: transparent;
     }
 }
