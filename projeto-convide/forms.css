@@ -4,7 +4,7 @@ legend{
     gap: .75rem;
     color: var( --text-heading);
    font-family: "Baloo 2", serif;
-   font-size: .75rem;
+   font-size: .70rem;
    padding-bottom: 24px;
 }
 legend i{
@@ -39,6 +39,24 @@ input[type="datetime-local"]::-webkit-inner-spin-button,
 input[type="datetime-local"]::-webkit-calendar-picker-indicator{
     display: none;
     -webkit-appearance: none;
+}
+
+input{
+    &:invalid{
+        border: 0.125rem solid var(--danger);
+    }
+    &[required] + .danger{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+    color: var(--danger);
+    font-family: "Open Sans", serif;
+    font-size: 0.75rem;
+    }
+    &:valid + .danger{
+        display: none;
+    }
 }
 p{
     color: var(--text-body);

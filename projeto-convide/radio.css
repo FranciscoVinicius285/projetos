@@ -48,15 +48,15 @@
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    margin: 10px;
+    margin: 3px;
     max-width: 560px;
 }
 #brand-light::after{
     content: "";
     position: absolute;
     background-color: #59B2FF;
-    width: 2.0rem;
-    height: 2.0rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 3rem;
     top: 50%;
     left: 50%;
@@ -222,8 +222,8 @@
 /* dropzone */
 .dropzone{
     position: relative;
-    max-width: 368px;
-    height: 48px;
+    width:23rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -234,7 +234,7 @@
         border-radius: 0.4rem;
     }
     & img{
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
     & input{
         position: absolute;
@@ -244,7 +244,7 @@
         opacity: 0;
     }
     & label{
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: .625rem;
+        padding-left: .625rem;
     }
 }

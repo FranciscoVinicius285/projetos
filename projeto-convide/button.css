@@ -1,0 +1,20 @@
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    & button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        gap: 10px;
+        font-size: 1rem;
+        color: var(--text-heading);
+        background-color: #1D6FB6;
+        outline: none;
+        border: none;
+    }
+
+}

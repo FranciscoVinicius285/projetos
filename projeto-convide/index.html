@@ -33,8 +33,13 @@
                        <fieldset>
                         <div class="input-wrapper">
                             <label for="title">Titulo</label>
-                            <input type="text" name="title" id="title" placeholder="Nome do evento">
+                            <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+                            <div class="danger">
+                                <img src="assets/circle-alert.svg" alt="">
+                                <span>Error message</span>
+                            </div>
                         </div>
+
                         <div class="input-wrapper">
                             <label for="title">Titulo</label>
                             <input type="text" name="title" id="title" placeholder="Nome do evento">
@@ -202,12 +207,56 @@
                                 </div>
                             </div>
                         </div>
-                       </fieldset>
-                        <!-- <div class="danger">
-                            <img src="assets/circle-alert.svg" alt="">
-                            <span>Error message</span>
-                        </div> -->
 
+                       </fieldset>
+
+                       <legend>
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                        <h1>Dados para contato</h1>
+                    </legend>
+                    <fieldset>
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                            <div class="danger">
+                                <img src="assets/circle-alert.svg" alt="">
+                                <span>Error message</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-input">
+                                <div class="input-wrapper">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="phone" name="phone" id="phone"  placeholder="(99) 9999-9999">
+                            </div>
+                        </div>
+
+                        <div class="confirm">
+                            <div class="flex-checkbox">
+                                <input type="checkbox" name="termos" id="checkbox">
+                                <label for="checkbox">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+                            </div>
+                            <div class="flex-checkbox">
+                                <input type="checkbox" name="email-termos" id="checkbox-2">
+                            <label for="checkbox-2">Aceito receber atualizações e promoções por e-mail</label>
+                            </div>
+                            <div class="flex-checkbox">
+                                <input type="checkbox" name="sms-termos" id="checkbox-3">
+                            <label for="checkbox-3">Aceito receber atualizações e promoções por SMS</label>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">
+                                <i class="fa-solid fa-ticket"></i>
+                                <h3>Gerar convite</h3>
+                            </button>
+                        </div>
+                    </fieldset>
         
                 </form>
             </div>

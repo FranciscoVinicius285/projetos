@@ -1,0 +1,41 @@
+.confirm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    border-top: 1px solid var(--input-placeholder);
+}
+.flex-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & label{
+        padding-top: 15px;
+        position: relative;
+    }
+
+    & input{
+       display: none;
+    }
+    & span{
+        color: var(--brand-light);
+        text-decoration: underline;
+    }
+}
+.flex-checkbox input + label:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--input-stroke);
+    border-radius: 4px;
+    display: inline-block;
+    align-items: center;
+    margin-right: 8px;
+}
+.flex-checkbox input:checked + label:before{
+    background-image: url(assets/check-solid.svg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--brand-light);
+}

@@ -34,11 +34,16 @@
 }
 body{
     overflow: hidden;
+    
     background-color: var(--bg);
+}
+form{
+    max-width: 600px;
 }
 .input-wrapper{
     padding-bottom: 1rem;
 }
 fieldset{
     border: none;
+    padding-bottom: 48px;
 }
