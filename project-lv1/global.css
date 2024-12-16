@@ -1,0 +1,42 @@
+:root{
+    --font-playfair: "Playfair Display", serif;
+    --font-open: "Open Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    --font-nav: 400 .0625rem/125% var(--font-roboto);
+    --font-li: 400 1rem/140% var(--font-roboto);
+    --h2-card: 700 3rem/120% var(--font-roboto);
+    --title-page: 700 1.5rem/140% var(--font-playfair);
+    --txt-sm: 400 0.875rem/120% var(--font-open);
+    --txt-md: 400 1.5rem/120% var(--font-open);
+    --txt-button: 700 0.875rem/130% var(--font-open);
+    --h3: 700 1.5rem/125% var(--font-open);
+    --p: 400 1rem/120% var(--font-open);
+
+
+    /* colors */
+    --green-light: #00b289;
+    --white: #fff;
+    --gray: #4c4d5f;
+    --yellow: #f8db62;
+    --green-light-low:#def5f2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/fundo-bonsai.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    color: var(--green-light);
+}
