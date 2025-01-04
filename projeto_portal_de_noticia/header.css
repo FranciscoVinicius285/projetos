@@ -1,0 +1,43 @@
+#primary{
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* nesting css */
+    div:nth-child(2){
+        margin-inline: auto;
+    }
+
+    div:nth-child(3){
+        justify-self: end;
+    }
+}
+
+#secondary{
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
+
+    & a{
+        margin-inline: 10px;
+    }
+}
+.desktop-only{
+    display: none;
+}
+@media (min-width: 1024px){
+    .desktop-only{
+        display: inline-block;
+    }
+    #secondary{
+
+    }
+}
