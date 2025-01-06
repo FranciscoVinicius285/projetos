@@ -6,7 +6,6 @@
     width: 100%;
 
     & .title{
-        padding-bottom: 0.5rem;
         h1{
             font: var(--tx-lg);
             color: var(--color-font);
