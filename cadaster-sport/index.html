@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cadaster-sport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="body-cadaster" class="grid grid-columns">
+        <div class="body-form bg-mobile">
+            <div class="content">
+                <div class="title">
+                    <h1>WELCOME BACK</h1>
+                    <p>Welcome back! Please enter your details.</p>
+                </div>
+                <form>
+                  <div class="box-input">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+                    <div class="danger">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Erro no cadastro</span>
+                    </div>
+                  </div>
+                    
+                    <div class="box-input">
+                        <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="**********" required>
+                    <div class="danger">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Erro no cadastro</span>
+                    </div>
+                    </div>
+    
+                    <div class="box-checkbox">
+                        <input type="checkbox" name="remeber-me" id="remeber-me">
+                        <label for="remeber-me">Remeber me</label>
+                        <span>Forgot password</span>
+                    </div>
+    
+                    <div class="buttons">
+                        <button type="submit">Sign ing</button>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="button-google">
+                            <img src="assets/google-icon.svg" alt="">
+                            Sign in with Google</button>
+                    </div>
+    
+                    <div class="account">
+                        <p>Don't have an account? <span>Sing up fo free!</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bg-img">
+            <img src="assets/bg-secondary.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>

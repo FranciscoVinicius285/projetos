@@ -1,0 +1,54 @@
+#body-cadaster{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px var(--color-description);
+    border-radius: 0.5rem;
+
+    & .bg-mobile{
+        display: block;
+        background-image: url(assets/bg-secondary.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    & .bg-img{
+        display: none;
+    }
+
+    & .body-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media (min-width: 1024px){
+    #body-cadaster{
+        max-width: 67.5rem;
+        & .bg-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            & img{
+                width: 100%;
+    
+            }
+        }
+
+        & .body-form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            background-image: none;
+        }
+    }
+
+    & .bg-mobile{
+        display: none;
+    }
+}

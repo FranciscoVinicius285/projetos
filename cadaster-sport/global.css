@@ -1,0 +1,39 @@
+:root{
+    --font-family: "Poppins", serif;
+
+    --tx-lg: 500 2.1rem var(--font-family);
+    --tx-md: 500 1rem var(--font-family);
+    --tx-sm: 400 0.875rem var(--font-family);
+    --tx-smx: 400 0.75rem var(--font-family);
+    --tx-sm-ultra: 400 0.625rem var(--font-family);
+
+    --color-font: #181818;
+    --color-description: #636364;
+    --color-button: #EA454C;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (min-width: 1024px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .grid{
+        display: grid;
+    }
+    .grid-columns{
+        grid-template-columns: 1fr 1fr;
+    }
+}
