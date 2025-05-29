@@ -13,12 +13,13 @@ section.gallery{
     }
 
     & img{
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
 
-    & .content{
+   
+      & .content{
         margin-top: 2rem;
         display: grid;
         grid-template-areas: 
@@ -46,7 +47,7 @@ section.gallery{
     }
 
     & figure{
-        border-radius:2.5rem;
+        border-radius: 2.5rem;
         overflow: hidden;
         position: relative;
         line-height: 0;
@@ -61,6 +62,7 @@ section.gallery{
 
         & > img{
             height: 25rem;
+            width: 100%;
             object-fit: cover;
             transition: scale 500ms;
         }
@@ -116,10 +118,10 @@ section.gallery{
 @media (min-width: 768px){
       section.gallery{
          & img{
-        width: 100%;
+        width: 80%;
         height: auto;
     }
-      }
+      
 
       & .content{
         margin-top: 2rem;
@@ -162,6 +164,7 @@ section.gallery{
 
         & > img{
             height: 25rem;
+            width: 100%;
             object-fit: cover;
             transition: scale 500ms;
         }
@@ -207,5 +210,6 @@ section.gallery{
             border-radius: 50%;
         }
     }
+}
 }
 
