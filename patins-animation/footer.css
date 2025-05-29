@@ -1,16 +1,17 @@
 footer{
-    max-width: 80rem;
+    max-width: 100rem;
     width: 100%;
     padding: 4rem 2rem 2rem;
     margin-inline: auto;
 
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     & .logo{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: .75rem;
     
         font: 700 1.25rem/1.3 'Syne', sans-serif;
@@ -27,7 +28,7 @@ footer{
 
     & nav{
         display: flex;
-        gap: 2rem;
+        gap: 4rem;
 
         & a{
             position: relative;
@@ -53,6 +54,7 @@ footer{
     & .social-links{
         display: flex;
         align-items: center;
+        justify-content: center;
 
         & a{
             width: 2.5rem;
@@ -90,6 +92,34 @@ footer{
                 scale: 0;
                 transition: scale 200ms;
             }
+        }
+    }
+}
+@media (min-width: 768px){
+    footer{
+    max-width: 80rem;
+    width: 100%;
+    padding: 4rem 2rem 2rem;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+        & .social-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        & nav{
+        display: flex;
+        gap: 2rem;
+        }
+        & .logo{
+        display: flex;
+        align-items: center;
+        gap: .75rem;
         }
     }
 }
